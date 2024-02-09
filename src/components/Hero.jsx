@@ -123,41 +123,48 @@ export default function Hero() {
 
     //TODO make mnt1/2 bigger and add speedx to them && make parallax elements not move while animation is loading
     return (
-        <main>
-            <div className="vigniette"></div>
-            <img
-                src="../Images/bg-2.png"
-                alt=""
-                className="parallax bg-img"
-                data-speedx="0.15"
-                data-speedy="0.25"
-                ref={bg}
-            />
-            <div className="text parallax" data-speedx="0.2" data-speedy="0.19">
-                <h2 ref={name}>Neamtu Matei</h2>
-                <h1 ref={job}>Web Developer</h1>
-            </div>
-            <img
-                src="../Images/Mountain1.png"
-                alt=""
-                className="parallax mountain1"
-                data-speedx="0.0"
-                data-speedy="0.2"
-                ref={mnt1}
-            />
-            <img
-                src="../Images/Mountain2.png"
-                alt=""
-                className="parallax mountain2"
-                data-speedx="0.0"
-                data-speedy="0.1"
-                ref={mnt2}
-            />
-            <img
-                src="../Images/BlackShadow.png"
-                alt=""
-                className="bottom-shadow"
-            />
-        </main>
+        <>
+            <main>
+                <div className="4"></div>
+                <img
+                    src="../Images/bg-2.png"
+                    alt=""
+                    className="parallax bg-img"
+                    data-speedx="0.15"
+                    data-speedy="0.25"
+                    ref={bg}
+                />
+                <div
+                    className="text parallax"
+                    data-speedx="0.2"
+                    data-speedy="0.19"
+                >
+                    <h2 ref={name}>Neamtu Matei</h2>
+                    <h1 ref={job}>Web Developer</h1>
+                </div>
+                <img
+                    src="../Images/Mountain1.png"
+                    alt=""
+                    className="parallax mountain1"
+                    data-speedx="0"
+                    data-speedy="0.2"
+                    ref={mnt1}
+                />
+                <img
+                    src="../Images/Mountain2.png"
+                    alt=""
+                    className="parallax mountain2"
+                    data-speedx="0"
+                    data-speedy="0.1"
+                    ref={mnt2}
+                />
+                <img
+                    src="../Images/BlackShadow.png"
+                    alt=""
+                    className="bottom-shadow"
+                />
+            </main>
+            <main></main>
+        </>
     );
 }

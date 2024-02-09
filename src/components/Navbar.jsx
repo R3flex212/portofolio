@@ -6,24 +6,25 @@ import { useEffect } from "react";
 export default function Navbar() {
     const el = useRef();
     window.addEventListener("load", () => {
-        gsap.from(
-            el.current,
-            {
-                opacity: 0,
-                duration: 4,
-                ease: "power3.out",
-            },
-            "3"
-        ),
-            gsap.to(
-                el.current,
-                {
-                    opacity: 1,
-                    duration: 4,
-                    ease: "power3.out",
-                },
-                "7"
-            );
+        //Nav animation
+        // gsap.from(
+        //     el.current,
+        //     {
+        //         opacity: 0,
+        //         duration: 4,
+        //         ease: "power3.out",
+        //     },
+        //     "3"
+        // ),
+        //     gsap.to(
+        //         el.current,
+        //         {
+        //             opacity: 1,
+        //             duration: 4,
+        //             ease: "power3.out",
+        //         },
+        //         "7"
+        //     );
     });
 
     return (
